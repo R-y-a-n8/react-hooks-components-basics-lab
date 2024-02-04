@@ -1,10 +1,10 @@
 import React from "react";
 
-function NavBar() {
+function NavBar (){
   return (
-    <nav>
-      <a href="#home">I'm a link!</a>
-    </nav>
+    <div>
+       <h1>I`m a link!</h1>
+    </div>
   );
 }
 
@@ -16,15 +16,23 @@ function Home() {
   );
 }
 
-{/* write an <About> component here */}
 
 
 function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Home />
+      <About />
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div id="about">
+      <h1>About</h1>
+      <p>This is the About page content.</p>
     </div>
   );
 }
